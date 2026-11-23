@@ -5,20 +5,17 @@
 </picture>
 </p>
 
-Desenvolvo aplicações web, APIs e automações com **Node.js, Vue e TypeScript**. Estudo Análise e Desenvolvimento de Sistemas e sou de Araripe, no Ceará.
+Crio aplicações web e APIs com **Vue, Node.js e TypeScript**. Desenvolvi as plataformas de pedidos da Embraza Gringos e da Qbombom e publiquei a pix-brcode para quem precisa integrar Pix a uma aplicação.
 
-[LinkedIn](https://www.linkedin.com/in/antonio-marcos-9305bb2b4/) · [Pacotes no npm](https://www.npmjs.com/~m4rquin) · [Repositórios](https://github.com/marcedoafk?tab=repositories)
+[Conheça meu portfólio](https://marcedoafk.github.io/) · [Converse comigo no LinkedIn](https://www.linkedin.com/in/antonio-marcos-9305bb2b4/)
 
-## pix-brcode
+## Projetos em destaque
 
-Biblioteca TypeScript para **gerar, ler e validar Pix copia-e-cola**, com geração de QR Code em SVG. Funciona em Node.js e no navegador, sem dependências.
-
-```sh
-npm install @m4rquin/pix-brcode
-```
+**[pix-brcode ↗](https://www.npmjs.com/package/@m4rquin/pix-brcode)**  
+Biblioteca TypeScript para gerar, ler e validar Pix copia e cola. Também gera QR Codes em SVG e funciona no navegador e em Node.js, sem dependências externas.
 
 <details>
-<summary>Explore a API</summary>
+<summary>Ver exemplo e funções da biblioteca</summary>
 
 ```ts
 import { qrSvg } from '@m4rquin/pix-brcode';
@@ -38,10 +35,14 @@ O QR Code da abertura foi gerado com essa função e aponta para o repositório.
 
 </details>
 
-[Abrir o código](https://github.com/marcedoafk/pix-brcode) · [Ver o pacote no npm](https://www.npmjs.com/package/@m4rquin/pix-brcode)
+**[Embraza Gringos ↗](https://embrazagringos.com.br/)**  
+Desenvolvi o fluxo de pedidos da hamburgueria, da montagem da sacola ao acompanhamento da entrega ou retirada.
 
-## Tecnologias
+**[Qbombom Sorvetes ↗](https://qbombomararipe.com.br/)**  
+Criei a experiência de compra da sorveteria. O cliente escolhe os adicionais de cada produto e confere a combinação no carrinho antes de pedir.
 
-- **Aplicações web** — Vue, JavaScript e TypeScript.
-- **APIs e integrações** — Node.js, Fastify e Express.
-- **Infraestrutura** — Docker, Linux e Nginx.
+## Sobre mim
+
+Sou de Araripe, no Ceará, e curso Análise e Desenvolvimento de Sistemas. Nos projetos de delivery, aprendi a pensar no que acontece depois do clique em “Pedir”. Na pix-brcode, o desafio foi escrever testes e exemplos para que outro desenvolvedor consiga usar a biblioteca por conta própria.
+
+Trabalho com Vue nas interfaces, Fastify e Express nas APIs, e Docker, Linux e Nginx na infraestrutura.
