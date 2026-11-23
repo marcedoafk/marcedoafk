@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="none" stroke="#7ccf80" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v16a2 2 0 0 0 2 2h16m-3-4V9m-5 8V5M8 17v-3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+    .bars path { stroke-dasharray: 1; animation: rise 4s ease-out infinite; }
+    .bars path:nth-child(2) { animation-delay: .14s; }
+    .bars path:nth-child(3) { animation-delay: .28s; }
+    @keyframes rise { 0%, 48%, 100% { stroke-dashoffset: 0; } 20% { stroke-dashoffset: .72; } }
+    }
+  </style>
+  <g fill="none" stroke="#e3646e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+    <g class="bars">
+      <path pathLength="1" d="M8 17v-3"/>
+      <path pathLength="1" d="M13 17V5"/>
+      <path pathLength="1" d="M18 17V9"/>
+    </g>
+  </g>
+</svg>

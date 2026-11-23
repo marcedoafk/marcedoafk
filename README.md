@@ -1,48 +1,49 @@
-<p>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-mobile.svg" />
-  <img src="assets/profile.svg" width="100%" alt="Marcos Macedo, desenvolvedor Full Stack. O editor sobre.ts apresenta três projetos: pix-brcode, Embraza Gringos e Qbombom Sorvetes." />
+  <img src="assets/profile.svg" width="100%" alt="Olá, eu sou Marcos Macedo, desenvolvedor Full Stack. Trabalho com Node.js, Vue, TypeScript, Fastify e Docker." />
 </picture>
-</p>
 
-Crio aplicações web e APIs com **Vue, Node.js e TypeScript**. Desenvolvi as plataformas de pedidos da Embraza Gringos e da Qbombom e publiquei a pix-brcode para quem precisa integrar Pix a uma aplicação.
+Sou de Araripe, no Ceará, e estudo Análise e Desenvolvimento de Sistemas. Desenvolvo aplicações web e APIs, do carrinho que o cliente usa para montar um pedido ao serviço que recebe a confirmação.
 
-[Conheça meu portfólio](https://marcedoafk.github.io/) · [Converse comigo no LinkedIn](https://www.linkedin.com/in/antonio-marcos-9305bb2b4/)
+[Portfólio](https://marcedoafk.github.io/) · [LinkedIn](https://www.linkedin.com/in/antonio-marcos-9305bb2b4/) · [Pacotes no npm](https://www.npmjs.com/~m4rquin)
 
-## Projetos em destaque
+## <img src="assets/icons/layers.svg" width="22" height="22" alt="" /> Projetos em destaque
 
-**[pix-brcode ↗](https://www.npmjs.com/package/@m4rquin/pix-brcode)**  
-Biblioteca TypeScript para gerar, ler e validar Pix copia e cola. Também gera QR Codes em SVG e funciona no navegador e em Node.js, sem dependências externas.
+**[pix-brcode](https://github.com/marcedoafk/pix-brcode)**<br>
+Biblioteca TypeScript para gerar, ler e validar Pix copia e cola. Também gera QR Code em SVG e funciona no navegador e no Node.js, sem dependências externas.
 
 <details>
-<summary>Ver exemplo e funções da biblioteca</summary>
+<summary>Gerar um QR Code com a pix-brcode</summary>
 
-```ts
-import { qrSvg } from '@m4rquin/pix-brcode';
+Em um projeto Node.js, instale o pacote:
 
-const url = 'https://github.com/marcedoafk/pix-brcode';
-const svg = qrSvg(url);
+```sh
+npm install @m4rquin/pix-brcode
 ```
 
-O QR Code da abertura foi gerado com essa função e aponta para o repositório.
+Salve como `exemplo.mjs` e execute `node exemplo.mjs`. Abra o arquivo `portfolio.svg` para ver o QR Code que leva ao meu portfólio.
 
-| Função | O que faz |
-| :--- | :--- |
-| `generate` | Cria o Pix copia-e-cola. |
-| `parse` | Lê os campos do código. |
-| `validate` | Verifica o CRC. |
-| `qrSvg` | Gera um QR Code em SVG. |
+```js
+import { writeFileSync } from 'node:fs';
+import { qrSvg } from '@m4rquin/pix-brcode';
+
+const svg = qrSvg('https://marcedoafk.github.io/');
+writeFileSync('portfolio.svg', svg);
+```
 
 </details>
 
-**[Embraza Gringos ↗](https://embrazagringos.com.br/)**  
-Desenvolvi o fluxo de pedidos da hamburgueria, da montagem da sacola ao acompanhamento da entrega ou retirada.
+**[Embraza Gringos](https://embrazagringos.com.br/)**<br>
+Desenvolvi o fluxo de pedidos da hamburgueria. O cliente monta a sacola, escolhe entre entrega e retirada e acompanha o pedido após a confirmação.
 
-**[Qbombom Sorvetes ↗](https://qbombomararipe.com.br/)**  
-Criei a experiência de compra da sorveteria. O cliente escolhe os adicionais de cada produto e confere a combinação no carrinho antes de pedir.
+**[Qbombom Sorvetes](https://qbombomararipe.com.br/)**<br>
+Criei a experiência de compra da sorveteria, da escolha dos adicionais à revisão do carrinho antes de enviar o pedido.
 
-## Sobre mim
+## <img src="assets/icons/chart.svg" width="22" height="22" alt="" /> Atividade no GitHub
 
-Sou de Araripe, no Ceará, e curso Análise e Desenvolvimento de Sistemas. Nos projetos de delivery, aprendi a pensar no que acontece depois do clique em “Pedir”. Na pix-brcode, o desafio foi escrever testes e exemplos para que outro desenvolvedor consiga usar a biblioteca por conta própria.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marcedoafk/marcedoafk/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/marcedoafk/marcedoafk/output/github-snake.svg" width="100%" alt="Animação de uma serpente percorrendo meu calendário de contribuições no GitHub." />
+</picture>
 
-Trabalho com Vue nas interfaces, Fastify e Express nas APIs, e Docker, Linux e Nginx na infraestrutura.
+[Ver calendário de contribuições no GitHub](https://github.com/marcedoafk#js-contribution-activity)
