@@ -1,7 +1,7 @@
 <p>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-mobile.svg" />
-  <img src="assets/profile.svg" width="100%" alt="Marcos Macedo, desenvolvedor Full Stack. Demonstração animada de qrSvg, da minha biblioteca pix-brcode. O QR Code abre o projeto." />
+  <img src="assets/profile.svg" width="100%" alt="Marcos Macedo, desenvolvedor Full Stack. O editor sobre.ts apresenta três projetos: pix-brcode, Embraza Gringos e Qbombom Sorvetes." />
 </picture>
 </p>
 
